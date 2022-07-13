@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import ShopingCards from "./ShopingCards";
+import './index.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App(){
+    return (
+        <div>
+         <header className="head">
+             <h1>E-Shopping</h1>
+             <ul class="nav">
+    <li class="active">Home</li>
+    <li>Search</li>
+    <li>Shop</li>
+    <li>About</li>
+    </ul>
+  <button>Sign In</button>
+         </header>
+        <ShopingCards></ShopingCards>
+        
+      </div>
+    );    
 }
 
 export default App;
