@@ -11,21 +11,21 @@ function ShopingCards(props){
         },
 
         {
-            name:'Boys-Shirt',
+            name:'Boys-Track',
             img: 'image2.jpg',
-            desc: '₹600' ,
+            desc: '800' ,
         },
 
         {
             name:'Boys-Shirt',
             img: 'image3.jpg',
-            desc: '₹600' ,
+            desc: '₹500' ,
         },
 
         {
-            name:'Boys-Shirt',
+            name:'Boys-Track',
             img: 'image4.jpg',
-            desc: '₹600' ,
+            desc: '₹1000' ,
         },
     ];
 
