@@ -1,13 +1,11 @@
-import "./App.css";
-import ShopingCards from "./ShopingCards";
-import './index.css'
+import Home from "./component/Home";
+import "./index.css";
 
-function App(){
-    return (
-    <div>
-     <ShopingCards home={ShopingCards} /> 
-      </div>
-    );    
+function App() {
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
-
 export default App;
