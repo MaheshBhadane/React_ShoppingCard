@@ -1,30 +1,60 @@
-function ShopItems(){
+import home from './home.js';
+
+function ShopingCards(props){
+
+    const items=[
+
+        {
+            name:'Boys-Shirt',
+            img: 'image1.jpg',
+            desc: '₹600' ,
+        },
+
+        {
+            name:'Boys-Shirt',
+            img: 'image2.jpg',
+            desc: '₹600' ,
+        },
+
+        {
+            name:'Boys-Shirt',
+            img: 'image3.jpg',
+            desc: '₹600' ,
+        },
+
+        {
+            name:'Boys-Shirt',
+            img: 'image4.jpg',
+            desc: '₹600' ,
+        },
+    ];
+
+
     return (
-     <>
-      <h1>Fashion</h1>
-     <div className="cardContainer">
-     <div className="card">
-     <img src="./images/image1.jpg" alt=""/>
-      <p>Blue T-shirt</p>
-      <h3>₹500 <strike>₹1000</strike> 55% off</h3>
-     </div>
- 
-     <div className="card">
-     <img src="./images/image2.jpg" alt=""/>
-      <p>Boys Track</p>
-      <h3>₹600 <strike>₹1100</strike> 67% off</h3>
-     </div>
- 
-     <div className="card">
-     <img src="./images/image3.jpg" alt=""/>
-      <p> Boys T-shirt</p>
-      <h3>₹1000 <strike>₹3000</strike> 70% off</h3>
-     </div>
- 
- 
-     </div>
- </>
-    )
+        <div>
+            <home name={items[0].name}
+            img={items[0].img}
+            desc={items[0].desc}>
+            </home>
+
+            <home name={items[1].name}
+            img={items[1].img}
+            desc={items[1].desc}>
+            </home>
+
+            <home name={items[2].name}
+            img={items[2].img}
+            desc={items[2].desc}>
+            </home>
+
+            <home name={items[3].name}
+            img={items[3].img}
+            desc={items[3].desc}>
+            </home>
+
+        </div>
+        
+        );
  }
  
- export default ShopItems;
+ export default ShopingCards;
