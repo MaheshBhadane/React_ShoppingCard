@@ -2,11 +2,11 @@
 import React from 'react';
 
 import MainForm from './MainForm';
-import './NewForm.css';
+import "./NewForm.css";
 
 const NewForm = () => {
   return (
-    <div className='new-form-controls'>
+    <div className='new-form'>
       <MainForm />
     </div>
   );

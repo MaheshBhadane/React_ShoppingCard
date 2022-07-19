@@ -1,17 +1,19 @@
+
+import { useState } from "react";
+
 var WhishList = () => {
+const [buttonText,setButtonText] =useState('WhishList');
+
+function handleClick() {
+  setButtonText('Added to wishlist');
+}
+
     return(
-        <div
-          style={{
-            position: "Fixed",
-            boxShadow: "3px 3px 5px black",
-            zIndex: "1",
-            top: "20%",
-            left: "25%",
-            backgroundColor: "white",
-            width: "50%",
-            height: "50%",
-          }}
-        ></div>
+        <div>
+          <div>
+            <button onClick={handleClick}>{buttonText}</button>
+          </div>
+        </div>
     )
 }
 

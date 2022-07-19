@@ -43,7 +43,7 @@ const ShowItem = (props) => {
           }}
         >
           <img
-            src={selectedItem.image}
+            src={selectedItem.image} alt=""
             style={{
               width: "30%",
               height: "60%",

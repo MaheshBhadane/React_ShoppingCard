@@ -1,3 +1,5 @@
+import WhishList from "./WhishList";
+
 const Card = (props) => {
   return (
     <>
@@ -26,8 +28,8 @@ const Card = (props) => {
           
         </div>
         </div>
-        <a href="/" className="btn btn-primary">wishlist</a>
         
+        <WhishList/>
       </div>
       
     </>
