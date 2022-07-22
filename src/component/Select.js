@@ -13,9 +13,9 @@ const Select =(props) => {
         borderRadius:"30px",
         display:"flex",
         justifyContent:"center",
-        alineItems:"center"
-          }}>
-          <h5>Select</h5>
+        alineItems:"center",
+           }}>
+          <h5> <button>Delete</button></h5>           
         </div>
 
         </>

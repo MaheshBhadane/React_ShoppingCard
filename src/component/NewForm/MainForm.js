@@ -13,7 +13,7 @@ const MainForm = () => {
     const [enteredPrice, setEnteredPrice]= useState('');
 
     const imageChangehandler= (event) => {
-        setEnteredImage(event.target.value);
+        setEnteredImage(event.target.files[0]);
 
         /*if(event.target.name==="img"){
             var fread= new FileReader()
@@ -38,7 +38,10 @@ const MainForm = () => {
     setEnteredPrice(event.target.value);
   };
 
-  
+  const titleClearHandler= (event) => {
+    setEnteredTitle("");
+  };
+
   const submitHandler = (event) =>{
 
     event.preventDefault();
@@ -58,6 +61,7 @@ const MainForm = () => {
 
 
   return (
+    <>
     <form onSubmit={submitHandler}>
       <div className="new-form__controls">
         <div className="new-form__control">
@@ -77,11 +81,19 @@ const MainForm = () => {
           <label>Amount</label>
           <input type="number" onChange={priceChangeHandler} />
         </div>
-        </div>
+        
       <div className="new-form__control">
         <button type="submit">Add Item</button>
       </div>
+        <div className="new-form__control">
+          <button onClick={titleClearHandler}>Clear</button>
+          </div>
+          </div>
+
     </form>
+    <img src={enteredImage} width="150" height="150" alt=""/>
+</>
+
   );
 };
 

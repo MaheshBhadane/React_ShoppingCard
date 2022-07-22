@@ -9,12 +9,12 @@ function handleClick() {
 }
 
     return(
-        <div>
+        
           <div>
             <button onClick={handleClick}>{buttonText}</button>
           </div>
-        </div>
+        
     )
-}
+};
 
 export default WhishList;

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./Card";
 import ItemList from "./ItemName";
+
 const ShowItem = (props) => {
   var [selectedItem, setSelectedItem] = useState({});
   var [products, setProducts] = useState(ItemList);
@@ -14,7 +15,7 @@ const ShowItem = (props) => {
     alert("Item added to Cart");
     props.setAdditem((previous) => {
       return { ...previous, itemObject };
-    });
+    })
     //console.log(props.additem);
     localStorage.setItem("cartArray", JSON.stringify(props.additem));
     var obj = JSON.parse(localStorage.getItem("cartArray"));

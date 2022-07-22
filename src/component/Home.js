@@ -2,8 +2,7 @@ import './index.css'
 import Navbar from './NavBar'
 import ShowItem from './Showitems'
 import { useState } from "react";
-import WhishList from './WhishList';
-import Card from './Card';
+
 import Select from './Select';
 
 
@@ -20,7 +19,8 @@ const Home = () =>{
     }
     return(
         <>
-            <Navbar/>
+            <Navbar />
+
             <Select cardSelect={SelectAllCards}/> 
             <ShowItem deleteicon={deleteIcon} setDelete={setDeleteIcon} deleteiconforCard={deleteIconForCard} additem ={CartItems} setAdditem ={setCartItems} />
             
